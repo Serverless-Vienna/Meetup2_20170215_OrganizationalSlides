@@ -94,7 +94,7 @@ export default class Presentation extends React.Component {
               src={images.techtalk.replace("/", "")}
               width="100%"
               bgColor={"white"}
-            />
+              />
             <p>Delivering Software with Impact</p>
           </Slide>
 
@@ -104,12 +104,12 @@ export default class Presentation extends React.Component {
             </Heading>
             <List>
               <ListItem>Scalable Chat - Gojko</ListItem>
-              <ListItem>- - - - - - - 15 minutes break - - - - - - -</ListItem>
-              <ListItem>Google Cloud Chat Hands on - Edem</ListItem>
-              <ListItem>- - - - - - - 15 minutes break - - - - - - -</ListItem>
+              <ListItem>- - - - - - - short break - - - - - - -</ListItem>
+              <ListItem>Google Firebase Chat Hands on - Edem</ListItem>
+              <ListItem>- - - - - - - short break - - - - - - -</ListItem>
               <ListItem>News Block - Gerald</ListItem>
               <ListItem>
-                Learnings from Tinkering with OpenWhisk - László
+                <s>Learnings from Tinkering with OpenWhisk - László</s>
               </ListItem>
             </List>
           </Slide>
@@ -128,7 +128,7 @@ export default class Presentation extends React.Component {
 
           <Slide transition={["slide"]}>
             <Heading size={2} textColor="headingColor">
-              Google Cloud Chat Hands on - Edem
+              Google Firebase Chat Hands on - Edem
             </Heading>
           </Slide>
 
@@ -144,7 +144,7 @@ export default class Presentation extends React.Component {
             </Heading>
           </Slide>
 
-          
+
           <Slide transition={["slide"]}>
             <Heading size={2} textColor="headingColor">
               AWS API Gateway
@@ -172,7 +172,7 @@ export default class Presentation extends React.Component {
                 <Image
                   src={images.step_functions_1.replace("/", "")}
                   width="100%"
-                />
+                  />
               </Fill>
             </Layout>
           </Slide>
@@ -233,7 +233,7 @@ export default class Presentation extends React.Component {
                 <Image
                   src={images.aws_facial_recognition1.replace("/", "")}
                   width="100%"
-                />
+                  />
               </Fill>
             </Layout>
           </Slide>
@@ -246,7 +246,7 @@ export default class Presentation extends React.Component {
                 <Image
                   src={images.aws_facial_recognition2.replace("/", "")}
                   width="100%"
-                />
+                  />
               </Fill>
             </Layout>
           </Slide>
@@ -259,7 +259,7 @@ export default class Presentation extends React.Component {
                 <Image
                   src={images.google_facial_recognition1.replace("/", "")}
                   width="100%"
-                />
+                  />
               </Fill>
             </Layout>
           </Slide>
@@ -272,7 +272,7 @@ export default class Presentation extends React.Component {
                 <Image
                   src={images.azure_facial_recognition1.replace("/", "")}
                   width="100%"
-                />
+                  />
               </Fill>
             </Layout>
           </Slide>
@@ -286,7 +286,7 @@ export default class Presentation extends React.Component {
                 <Image
                   src={images.aws_image_analysis1.replace("/", "")}
                   width="100%"
-                />
+                  />
               </Fill>
             </Layout>
           </Slide>
@@ -300,7 +300,7 @@ export default class Presentation extends React.Component {
                 <Image
                   src={images.google_image_analysis1.replace("/", "")}
                   width="100%"
-                />
+                  />
               </Fill>
             </Layout>
           </Slide>
@@ -314,7 +314,7 @@ export default class Presentation extends React.Component {
                 <Image
                   src={images.azure_image_analysis1.replace("/", "")}
                   width="100%"
-                />
+                  />
               </Fill>
             </Layout>
           </Slide>
@@ -346,7 +346,7 @@ export default class Presentation extends React.Component {
                 <Image
                   src={images.aws_lightsail1.replace("/", "")}
                   width="100%"
-                />
+                  />
               </Fill>
             </Layout>
           </Slide>
@@ -368,8 +368,8 @@ export default class Presentation extends React.Component {
               <ListItem>
                 <Link
                   href="http://docs.aws.amazon.com/lambda/latest/dg/dlq.html?adbsc=social_20170208_69639556&amp;adbid=829389464040452097&amp;adbpl=tw&amp;adbpr=66780587"
-                >
-                  Dead Letter Queue
+                  >
+                  SQS Dead Letter Queue
                 </Link>
 
               </ListItem>
@@ -379,7 +379,7 @@ export default class Presentation extends React.Component {
 
           <Slide transition={["slide"]}>
             <Heading size={2} textColor="headingColor">
-              Amazon AppStream 2.0 - New Service
+              Amazon AppStream 2.0
             </Heading>
             <p>
               allows you to stream desktop apps securely from the AWS cloud directly to users on the device of their choice, eliminating the need to rewrite desktop apps for the cloud.
@@ -388,7 +388,7 @@ export default class Presentation extends React.Component {
 
           <Slide transition={["slide"]}>
             <Heading size={2} textColor="headingColor">
-              Amazon WorkSpaces  - New Features
+              Amazon WorkSpaces
             </Heading>
             <p>
               virtual cloud desktops
@@ -413,7 +413,7 @@ export default class Presentation extends React.Component {
                 <Image
                   src={images.aws_greengrass1.replace("/", "")}
                   width="100%"
-                />
+                  />
               </Fill>
             </Layout>
           </Slide>
@@ -452,7 +452,7 @@ export default class Presentation extends React.Component {
                 <Image
                   src={images.aws_cloudfront_tweet1.replace("/", "")}
                   width="100%"
-                />
+                  />
               </Fill>
             </Layout>
           </Slide>
@@ -465,7 +465,7 @@ export default class Presentation extends React.Component {
               IBM OpenWhisk support
               <Link
                 href="https://serverless.com/blog/openwhisk-integration-with-serverless/"
-              >
+                >
                 +
               </Link>
             </p>
@@ -475,77 +475,38 @@ export default class Presentation extends React.Component {
             <Heading size={2} textColor="headingColor">
               Serverless
             </Heading>
-            <p>
-              IoT event support, Cognito user pool authorizer & install service with a name in Serverless Framework v1.5
+              <List>
+              <ListItem>
+              IoT event support</ListItem>
+              <ListItem>Cognito user pool authorizer</ListItem>
+              <ListItem>install service with a name in Serverless Framework v1.5
               <Link href="https://serverless.com/blog/serverless-v1.5.0/">
                 +
               </Link>
-            </p>
-          </Slide>
+              </ListItem>
+              </List>
+            </Slide>
 
           <Slide transition={["slide"]}>
             <Heading size={2} textColor="headingColor">
               Serverless
             </Heading>
-            <p>
-              C# service template, Alexa event support, service-wide metrics in Serverless Framework v1.4
-              <Link href="https://serverless.com/blog/serverless-v1.4.0/">
+            
+            <List>
+              <ListItem>
+              C# service template</ListItem>
+              <ListItem>Alexa event support</ListItem>
+              <ListItem>service-wide metrics in Serverless Framework v1.4
+                <Link href="https://serverless.com/blog/serverless-v1.4.0/">
                 +
-              </Link>
-            </p>
+                </Link>
+              </ListItem>
+            </List>
           </Slide>
 
-          <Slide transition={["slide"]}>
-            <Heading size={2} textColor="headingColor">
-              Learnings from Tinkering with OpenWhisk - László
-            </Heading>
-          </Slide>
+         
 
-          <Slide transition={["slide"]}>
-            <Heading size={2} textColor="headingColor">
-              Resources
-            </Heading>
-<p>Serverless reference app and backend API, showcasing authentication and authorization patterns using Amazon Cognito, Amazon API Gateway, AWS Lambda, and AWS IAM. <Link href="https://github.com/awslabs/aws-serverless-auth-reference-app">+</Link>
-</p>
-<p>Simplify Serverless Applications with Environment Variables in AWS Lambda <Link href="https://aws.amazon.com/blogs/compute/simplify-serverless-applications-with-environment-variables-in-aws-lambda/?adbsc=social_20170206_69639456&adbid=828664607875100672&adbpl=tw&adbpr=66780587">+</Link>
-</p>
-<p>The getting started sample demonstrates how to perform common tasks using the Azure Blob Service in node.js including uploading a blob, CRUD operations, listing, as well as blob snapshot creation. <Link href="https://github.com/Azure-Samples/storage-blob-node-getting-started">+</Link>
-</p>
-<p>10 GitHub samples with Azure DocumentDB you shouldn’t miss! <Link href="https://azure.microsoft.com/en-us/blog/10-github-samples-with-azure-documentdb-you-shouldn-t-miss/?utm_source=t.co&utm_medium=referral">+</Link>
-</p>
-          </Slide>
-
-<Slide transition={["slide"]}>
-            <Heading size={2} textColor="headingColor">
-              Resources
-            </Heading>
-<p>The Image Recognition and Processing Backend reference architecture demonstrates how to use AWS Step Functions to orchestrate a serverless processing workflow using AWS Lambda, Amazon S3, Amazon DynamoDB and Amazon Rekognition. <Link href="https://github.com/awslabs/lambda-refarch-imagerecognition">+</Link>
-</p>
-<p>Serverless Reference Architecture: Vote Application - Serverless Reference Architecture illustrating how to build dynamic web applications using AWS Lambda and Amazon API Gateway to authenticate and process API requests. <Link href="https://github.com/awslabs/lambda-refarch-voteapp">+</Link>
-</p>
-<p>Code and walkthrough labs to set up a serverless web application for the Wild Rydes Workshop <Link href="https://github.com/awslabs/aws-serverless-website-workshop">+</Link>
-</p>
-<p>Examples using AWS IoT (Internet of Things) <Link href="https://github.com/awslabs/aws-iot-examples">+</Link>
-</p>
-          </Slide>
-
-
-
-          <Slide transition={["slide"]}>
-            <Heading size={2} textColor="headingColor">
-              Resources
-            </Heading>
-<p>Sample application for Amazon Polly. Allows to convert any blog into an audio podcast. <Link href="https://github.com/awslabs/amazon-polly-sample">+</Link>
-</p>
-<p>How To Build A Serverless Notification System on AWS <Link href="https://serverless.com/blog/serverless-notifications-on-aws/">+</Link>
-</p>
-<p>How to build powerful back-ends easily with Serverless - Building an image processor on AWS Lambda <Link href="https://hackernoon.com/how-to-build-powerful-back-ends-easily-with-serverless-17a833bc7ede#.wvyh71msk">+</Link>
-</p>
-<p>Google Cloud Node.js Client - Node.js idiomatic client for Google Cloud Platform services. <Link href="https://github.com/GoogleCloudPlatform/google-cloud-node">+</Link>
-</p>
-<p>StreamAlert: Real-time Data Analysis and Alerting <Link href="https://medium.com/airbnb-engineering/streamalert-real-time-data-analysis-and-alerting-e8619e3e5043#.rt2136xqv">+</Link> 
-</p>
-          </Slide>
+          
 
 
 
@@ -557,6 +518,54 @@ export default class Presentation extends React.Component {
               Discussion
             </Heading>
           </Slide>
+
+
+<Slide transition={["slide"]}>
+            <Heading size={2} textColor="headingColor">
+              Resources
+            </Heading>
+            <p>Serverless reference app and backend API, showcasing authentication and authorization patterns using Amazon Cognito, Amazon API Gateway, AWS Lambda, and AWS IAM. <Link href="https://github.com/awslabs/aws-serverless-auth-reference-app">+</Link>
+            </p>
+            <p>Simplify Serverless Applications with Environment Variables in AWS Lambda <Link href="https://aws.amazon.com/blogs/compute/simplify-serverless-applications-with-environment-variables-in-aws-lambda/?adbsc=social_20170206_69639456&adbid=828664607875100672&adbpl=tw&adbpr=66780587">+</Link>
+            </p>
+            <p>The getting started sample demonstrates how to perform common tasks using the Azure Blob Service in node.js including uploading a blob, CRUD operations, listing, as well as blob snapshot creation. <Link href="https://github.com/Azure-Samples/storage-blob-node-getting-started">+</Link>
+            </p>
+            <p>10 GitHub samples with Azure DocumentDB you shouldn’t miss! <Link href="https://azure.microsoft.com/en-us/blog/10-github-samples-with-azure-documentdb-you-shouldn-t-miss/?utm_source=t.co&utm_medium=referral">+</Link>
+            </p>
+          </Slide>
+
+          <Slide transition={["slide"]}>
+            <Heading size={2} textColor="headingColor">
+              Resources
+            </Heading>
+            <p>The Image Recognition and Processing Backend reference architecture demonstrates how to use AWS Step Functions to orchestrate a serverless processing workflow using AWS Lambda, Amazon S3, Amazon DynamoDB and Amazon Rekognition. <Link href="https://github.com/awslabs/lambda-refarch-imagerecognition">+</Link>
+            </p>
+            <p>Serverless Reference Architecture: Vote Application - Serverless Reference Architecture illustrating how to build dynamic web applications using AWS Lambda and Amazon API Gateway to authenticate and process API requests. <Link href="https://github.com/awslabs/lambda-refarch-voteapp">+</Link>
+            </p>
+            <p>Code and walkthrough labs to set up a serverless web application for the Wild Rydes Workshop <Link href="https://github.com/awslabs/aws-serverless-website-workshop">+</Link>
+            </p>
+            <p>Examples using AWS IoT (Internet of Things) <Link href="https://github.com/awslabs/aws-iot-examples">+</Link>
+            </p>
+          </Slide>
+
+
+
+          <Slide transition={["slide"]}>
+            <Heading size={2} textColor="headingColor">
+              Resources
+            </Heading>
+            <p>Sample application for Amazon Polly. Allows to convert any blog into an audio podcast. <Link href="https://github.com/awslabs/amazon-polly-sample">+</Link>
+            </p>
+            <p>How To Build A Serverless Notification System on AWS <Link href="https://serverless.com/blog/serverless-notifications-on-aws/">+</Link>
+            </p>
+            <p>How to build powerful back-ends easily with Serverless - Building an image processor on AWS Lambda <Link href="https://hackernoon.com/how-to-build-powerful-back-ends-easily-with-serverless-17a833bc7ede#.wvyh71msk">+</Link>
+            </p>
+            <p>Google Cloud Node.js Client - Node.js idiomatic client for Google Cloud Platform services. <Link href="https://github.com/GoogleCloudPlatform/google-cloud-node">+</Link>
+            </p>
+            <p>StreamAlert: Real-time Data Analysis and Alerting <Link href="https://medium.com/airbnb-engineering/streamalert-real-time-data-analysis-and-alerting-e8619e3e5043#.rt2136xqv">+</Link>
+            </p>
+          </Slide>
+
 
         </Deck>
       </Spectacle>
